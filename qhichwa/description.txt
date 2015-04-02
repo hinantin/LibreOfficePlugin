@@ -1,1 +1,2 @@
-Qhichwa Spell Checker
+Normalized Southern Quechua spell checker, implemented in Foma. The orthography in this spell checker is the official writing standard in Peru and Bolivia, as proposed by the Peruvian linguist R. Cerrón Palomino.
+This research is funded by the Swiss National Science Foundation under grant 100015_132219/1.

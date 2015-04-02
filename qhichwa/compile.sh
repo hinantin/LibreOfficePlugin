@@ -46,13 +46,18 @@ while getopts ':hxcjon:' option; do
        ;;
     o)
 
-       rm -f qhichwa.oxt
-       zip -r qhichwa.oxt lib
-       zip -r qhichwa.oxt resources
-       zip -r qhichwa.oxt META-INF
-       zip -j qhichwa.oxt jar/qhichwa.jar
-       zip qhichwa.oxt description.xml
-       zip qhichwa.oxt description.txt
+       chmod +x build.properties
+       . build.properties
+       name=qhichwa-$buildversion.oxt
+       rm -f *.oxt
+       zip -r $name lib
+       zip -r $name resources
+       zip -r $name META-INF
+       zip -j $name jar/qhichwa.jar
+       sed -e "s/version value=\".*\"/version value=\"$buildversion\"/" description.base.xml > description.xml
+       zip $name description.xml
+       rm -f description.xml
+       zip $name description.txt
 
        ;;
     :) printf "missing argument for -%s\n" "$OPTARG" >&2
