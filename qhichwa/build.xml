@@ -1,0 +1,42 @@
+<project>
+    <property name="jdom" value="lib\jdom.jar" />
+    <property name="json" value="lib\json.jar" />
+    <property name="juh" value="lib\juh.jar" />
+    <property name="jurt" value="lib\jurt.jar" />
+    <property name="ridl" value="lib\ridl.jar" />
+    <property name="unoil" value="lib\unoil.jar" />
+    <path id="classpath">
+        <pathelement location="${jdom}" />
+        <pathelement location="${json}" />
+        <pathelement location="${juh}" />
+        <pathelement location="${jurt}" />
+        <pathelement location="${ridl}" />
+        <pathelement location="${unoil}" />
+    </path>
+
+    <target name="clean">
+        <delete dir="build"/>
+        <delete dir="jar"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build"/>
+        <javac srcdir="src" destdir="build" encoding="iso-8859-1">
+            <classpath refid="classpath" />
+        </javac>
+    </target>
+
+    <target name="jar">
+        <mkdir dir="jar"/>
+        <jar destfile="jar/qhichwa.jar" basedir="build">
+            <manifest>
+                <attribute name="RegistrationClassName" value="qhichwa.openoffice.CentralRegistrationClass"/>
+                <attribute name="RegistrationClasses" value="qhichwa.openoffice.Main"/>
+                <attribute name="Implementation-Version" value="0.3.1"/>
+                <attribute name="Uno-Type-Path" value=""/>
+                <attribute name="Class-Path" value=". ./lib/jdom.jar ./lib/juh.jar ./lib/jurt.jar ./lib/ridl.jar ./lib/unoil.jar ./lib/json.jar ./resource"/>
+            </manifest>
+        </jar>
+    </target>
+
+</project>
