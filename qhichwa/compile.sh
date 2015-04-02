@@ -49,6 +49,7 @@ while getopts ':hxcjon:' option; do
        rm -f qhichwa.oxt
        7z a qhichwa.oxt lib
        7z a qhichwa.oxt resources
+       7z a qhichwa.oxt META-INF
        7z a qhichwa.oxt ./jar/qhichwa.jar
        7z a qhichwa.oxt description.xml
        7z a qhichwa.oxt description.txt
