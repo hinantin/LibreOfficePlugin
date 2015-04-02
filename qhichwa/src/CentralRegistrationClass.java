@@ -20,8 +20,8 @@ import java.util.jar.Manifest;
  * @author Richard
  */
 public class CentralRegistrationClass {
-    
-    public static XSingleComponentFactory __getComponentFactory( String sImplementationName ) {
+
+    public static XSingleComponentFactory __getComponentFactory(String sImplementationName) {
         String regClassesList = getRegistrationClasses();
         StringTokenizer t = new StringTokenizer(regClassesList, " ");
         while (t.hasMoreTokens()) {
@@ -32,10 +32,9 @@ public class CentralRegistrationClass {
                     Method writeRegInfo = regClass.getDeclaredMethod("__getComponentFactory", new Class[]{String.class});
                     Object result = writeRegInfo.invoke(regClass, sImplementationName);
                     if (result != null) {
-                       return (XSingleComponentFactory)result;
+                        return (XSingleComponentFactory) result;
                     }
-                }
-                catch (ClassNotFoundException ex) {
+                } catch (ClassNotFoundException ex) {
                     ex.printStackTrace();
                 } catch (ClassCastException ex) {
                     ex.printStackTrace();
@@ -55,7 +54,7 @@ public class CentralRegistrationClass {
         return null;
     }
 
-    public static boolean __writeRegistryServiceInfo( XRegistryKey xRegistryKey ) {
+    public static boolean __writeRegistryServiceInfo(XRegistryKey xRegistryKey) {
         boolean bResult = true;
         String regClassesList = getRegistrationClasses();
         StringTokenizer t = new StringTokenizer(regClassesList, " ");
@@ -66,9 +65,8 @@ public class CentralRegistrationClass {
                     Class regClass = Class.forName(className);
                     Method writeRegInfo = regClass.getDeclaredMethod("__writeRegistryServiceInfo", new Class[]{XRegistryKey.class});
                     Object result = writeRegInfo.invoke(regClass, xRegistryKey);
-                    bResult &= ((Boolean)result).booleanValue();
-                }
-                catch (ClassNotFoundException ex) {
+                    bResult &= ((Boolean) result).booleanValue();
+                } catch (ClassNotFoundException ex) {
                     ex.printStackTrace();
                 } catch (ClassCastException ex) {
                     ex.printStackTrace();
@@ -97,23 +95,25 @@ public class CentralRegistrationClass {
                 URL url = urlEnum.nextElement();
                 String file = url.getFile();
                 JarURLConnection jarConnection =
-                    (JarURLConnection) url.openConnection();
+                        (JarURLConnection) url.openConnection();
                 Manifest mf = jarConnection.getManifest();
 
                 Attributes attrs = (Attributes) mf.getAttributes(name);
-                if ( attrs != null ) {
-                    String classes = attrs.getValue( "RegistrationClasses" );
+                if (attrs != null) {
+                    String classes = attrs.getValue("RegistrationClasses");
                     return classes;
                 }
             }
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-            
+
         return "";
     }
-    
-    
+
+    /**
+     * Creates a new instance of CentralRegistrationClass
+     */
     private CentralRegistrationClass() {
     }
 }
