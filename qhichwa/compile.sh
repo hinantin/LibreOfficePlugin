@@ -47,12 +47,12 @@ while getopts ':hxcjon:' option; do
     o)
 
        rm -f qhichwa.oxt
-       7z a qhichwa.oxt lib
-       7z a qhichwa.oxt resources
-       7z a qhichwa.oxt META-INF
-       7z a qhichwa.oxt ./jar/qhichwa.jar
-       7z a qhichwa.oxt description.xml
-       7z a qhichwa.oxt description.txt
+       zip -r qhichwa.oxt lib
+       zip -r qhichwa.oxt resources
+       zip -r qhichwa.oxt META-INF
+       zip -j qhichwa.oxt jar/qhichwa.jar
+       zip qhichwa.oxt description.xml
+       zip qhichwa.oxt description.txt
 
        ;;
     :) printf "missing argument for -%s\n" "$OPTARG" >&2
