@@ -1,5 +1,14 @@
-SQUOIA PROJECT SPELLCHECKERS
+SQUOIA Project Spellcheckers
 ============================
+
+version 0.3-beta.3
+2015/04/01
+
+Authors: 
+  * Annette Rios, e-mail: rios at cl.uzh.ch 
+  * Richard Castro, e-mail: rcastro at hinantin.com
+
+### Compiling/installing 
 
 1. (Optional) Download LibreOffice SDK from https://www.libreoffice.org/, we do not provide the sdk as part of our project as it may be subject to changes over time.
 
