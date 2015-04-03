@@ -35,6 +35,6 @@ Authors:
 
     `$ ./compile.sh -xcjo`
 
-5. If everything went well a qhichwav%.%%.oxt should appear.
+5. If everything went well a `qhichwav%.%%.oxt` should appear.
 
 
