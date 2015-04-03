@@ -1,0 +1,3 @@
+Southern Unified Quechua, with an extended Spanish lexicon and a large set of correction rules. This spelling corrector is implemented in Foma, and the orthography in this spell checker is the official writing standard in Peru and Bolivia, as proposed by the Peruvian linguist R. Cerrón Palomino. The Spanish lexicon permits the correction of loan words consisting of a Spanish root combined with Quechua suffixes. The additional set of rules, on the other hand, rewrites common spelling errors directly to the correct form. By this procedure, the quality of the suggestions improves considerably.
+
+This research is funded by the Swiss National Science Foundation under grant 100015_132219/1.
