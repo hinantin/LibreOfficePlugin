@@ -3,9 +3,9 @@ SQUOIA Project Spellcheckers
 
 **Version**: 0.3-beta.3
 
-**Last update date**: 2015/04/01
+**Last updated**: 2015/04/01
 
-Authors: 
+#### Authors: 
   * Annette Rios, e-mail: rios at cl.uzh.ch 
   * Richard Castro, e-mail: rcastro at hinantin.com
 
@@ -37,4 +37,6 @@ Authors:
 
 5. If everything went well a `qhichwav%.%%.oxt` should appear.
 
+### Note
 
+This research is funded by the **Swiss National Science Foundation** under grant *100015_132219/1*.
