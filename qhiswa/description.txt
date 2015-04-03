@@ -1,0 +1,2 @@
+Cusco Quechua spell checker (3 vowels), implemented with the Foma Toolkit. The orthography used as standard in this corrector adheres to the local Cusco dialect.
+This research is funded by the Swiss National Science Foundation under grant 100015_132219/1.

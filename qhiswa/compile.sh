@@ -49,7 +49,7 @@ while getopts ':hxcjon:' option; do
 
        chmod +x build.properties
        . build.properties
-       name=qhichwa-$buildversion.oxt
+       name=qusqu_qhiswa-$buildversion.oxt
        rm -f *.oxt
        zip -r $name lib
        zip -r $name resources

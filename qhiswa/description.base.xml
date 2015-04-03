@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:d="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<identifier value="qhichwa.cuz_simple_foma.openoffice.oxt" />
+	<display-name>
+		<name lang="en-US">Qusqu Qhiswa Spell Checker</name>
+		<name lang="de-DE">Qusqu Qhiswa rechtschreibprüfung</name>
+		<name lang="es-PE">Corrector Ortográfico Qusqu Qhiswa</name>
+	</display-name>
+
+	<version value="0.3.2" />
+
+	<icon>
+		<default xlink:href="resources/logo.png" />
+	</icon>
+
+	<publisher>
+    <name xlink:href="http://code.google.com/p/squoia/" lang="en">Squoia Project</name>
+    <name xlink:href="http://code.google.com/p/squoia/" lang="de">Squoia Projekt</name>
+    <name xlink:href="http://code.google.com/p/squoia/" lang="es">Proyecto Squoia</name>
+	</publisher>	
+
+	<dependencies>
+		<OpenOffice.org-minimal-version value="3.1.0" d:name="OpenOffice.org 3.1.0" />
+	</dependencies>
+
+	<release-notes>
+		<src xlink:href="CHANGES.txt" lang="en" />
+		<src xlink:href="CHANGES.txt" lang="de" />
+		<src xlink:href="CHANGES.txt" lang="es" />
+	</release-notes>
+
+	<update-information>
+		<src xlink:href="http://squoia.googlecode.com/svn/trunk/spellcheck_plugin/d/update.xml" />
+	</update-information>
+</description>
