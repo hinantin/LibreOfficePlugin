@@ -1,6 +1,8 @@
 SQUOIA Project Spellcheckers
 ============================
 
+### Institute of Computational Linguistics, University of Zurich
+
 **Version**: 0.3-beta.3
 
 **Last updated**: 2015/04/01
