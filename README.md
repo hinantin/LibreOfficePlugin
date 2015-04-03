@@ -1,9 +1,9 @@
 SQUOIA Project Spellcheckers
 ============================
 
-*Version*: 0.3-beta.3
+**Version**: 0.3-beta.3
 
-*Last update date*: 2015/04/01
+**Last update date**: 2015/04/01
 
 Authors: 
   * Annette Rios, e-mail: rios at cl.uzh.ch 
