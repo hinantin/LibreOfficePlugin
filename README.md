@@ -11,6 +11,11 @@ SQUOIA Project Spellcheckers
   * Annette Rios, e-mail: rios at cl.uzh.ch 
   * Richard Castro, e-mail: rcastro at hinantin.com
 
+#### Compatibility
+
+The plugins are developed and tested on a Ubuntu Linux system.
+The source code should be reasonably portable to win 32 and Mac OSX.
+
 ### Compiling/installing 
 
 1. (Optional) Download LibreOffice SDK from https://www.libreoffice.org/, we do not provide the sdk as part of our project as it may be subject to changes over time.
