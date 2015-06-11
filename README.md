@@ -16,7 +16,7 @@ SQUOIA Project Spellcheckers
 The plugins are developed and tested on a Ubuntu Linux system.
 The source code should be reasonably portable to win 32 and Mac OSX.
 
-### Compiling/installing 
+### Compiling OXT Plugin 
 
 1. (Optional) Download LibreOffice SDK from https://www.libreoffice.org/, we do not provide the sdk as part of our project as it may be subject to changes over time.
 
@@ -44,6 +44,13 @@ The source code should be reasonably portable to win 32 and Mac OSX.
 
 5. If everything went well a `qhichwav%.%%.oxt` should appear.
 
-### Note
+### Installing the plugin
+
+#### Prerequisites
+
+  * LibreOffice 4.3
+  * Oracle Java 7
+
+### Acknowledgement
 
 This research is funded by the **Swiss National Science Foundation** under grant *100015_132219/1*.
