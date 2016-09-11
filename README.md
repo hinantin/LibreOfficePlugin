@@ -48,6 +48,7 @@ The source code should be reasonably portable to win 32 and Mac OSX.
 
 #### Prerequisites
 
+  * At least 4GB of RAM memory
   * LibreOffice 4.3
   * Oracle Java 7
 
