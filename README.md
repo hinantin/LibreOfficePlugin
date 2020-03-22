@@ -1,4 +1,4 @@
-SQUOIA Project Spellcheckers
+SQUOIA Project Spellcheckers (ON-MAINTENANCE)
 ============================
 
 ### Institute of Computational Linguistics, University of Zurich
