@@ -20,17 +20,21 @@ The source code should be reasonably portable to win 32 and Mac OSX.
 
 1. (Optional) Download LibreOffice SDK from https://www.libreoffice.org/, we do not provide the sdk as part of our project as it may be subject to changes over time.
 
-    `$ sudo apt-get install alien dpkg-dev debhelper build-essential`
+    ```bash
+    $ sudo apt-get install alien dpkg-dev debhelper build-essential
 
-    `$ sudo alien packagename.rpm`
+    $ sudo alien packagename.rpm
 
-    `$ sudo dpkg -i packagename.deb`
+    $ sudo dpkg -i packagename.deb
+    ```
 
 2. Install `ant` and `zip`:
 
-    `$ sudo apt-get -u install ant`
+    ```bash
+    $ sudo apt-get -u install ant
 
-    `$ sudo apt-get install zip`
+    $ sudo apt-get install zip
+    ```
 
 3. Go to the `qhichwa` folder
 
