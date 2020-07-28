@@ -7,7 +7,7 @@ Spellchecker plugins for LibreOffice
 
 #### Authors: 
   * Annette Rios, e-mail: rios at cl.uzh.ch 
-  * Richard Castro, e-mail: richard.castro.mamani at gmail.com
+  * Richard Castro, e-mail: rcastro at hinant.in
 
 #### Compatibility
 
