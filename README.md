@@ -1,11 +1,9 @@
-SQUOIA Project Spellcheckers
+Spellchecker plugins for LibreOffice
 ============================
-
-### Institute of Computational Linguistics, University of Zurich
 
 **Version**: 0.3-beta.3
 
-**Last updated**: 2015/04/01
+**Last updated**: 2020/07/28
 
 #### Authors: 
   * Annette Rios, e-mail: rios at cl.uzh.ch 
@@ -60,4 +58,4 @@ The source code should be reasonably portable to win 32 and Mac OSX.
 
 ### Acknowledgement
 
-This research is funded by the **Swiss National Science Foundation** under grant *100015_132219/1*.
+This research was funded by the **Swiss National Science Foundation** under grant *100015_132219/1*.
