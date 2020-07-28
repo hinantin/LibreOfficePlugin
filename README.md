@@ -42,9 +42,11 @@ The source code should be reasonably portable to win 32 and Mac OSX.
 
 4. Run the following commands:
 
-    `$ chmod +x compile.sh`
+    ```bash
+    $ chmod +x compile.sh
 
-    `$ ./compile.sh -xcjo`
+    $ ./compile.sh -xcjo
+    ```
 
 5. If everything went well a `qhichwav%.%%.oxt` should appear.
 
