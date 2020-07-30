@@ -57,12 +57,13 @@ import java.io.InputStreamReader;
 /*  42: 33 */     temp.debug = true;
 /*  43: 34 */     Locale lt = new Locale();
 /*  44: 35 */     //lt.Language = "qu";
-/*  45: 36 */     //lt.Country = "PE";
-/*  44: 35 */     lt.Language = "qul";
-/*  45: 36 */     lt.Country = "BO";
-/*  46: 37 */     lt.Variant = "UTF-8";
-/*  47:    */     
-/*  48: 39 */     System.out.println("Checking validity of ATIZRI: " + temp.isValidWord("ATIZRI"));
+                  //lt.Country = "PE";
+                  // SPELL CHECKING CONFIGURATION 
+                  lt.Language = "qul";
+                  lt.Country = "BO";
+                  lt.Variant = "UTF-8";
+                  
+                  System.out.println("Checking validity of ATIZRI: " + temp.isValidWord("ATIZRI"));
                   String[] alt = temp.getAlternatives("atziriii");
                     for (int i = 0; i < alt.length; i++) {
                         System.out.println("Checking alternatives of ATIZRI: " + alt[i]);        
