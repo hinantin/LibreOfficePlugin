@@ -68,16 +68,16 @@ package panashaninka.client;
                     for (int i = 0; i < alt.length; i++) {
                         System.out.println("Checking alternatives of ATIZRI: " + alt[i]);        
                     }
-/*  50: 41 */     ProofreadingResult error = temp.proofreadText("PONYAA IKANTAVITAKA PASHINI, IROHATSI YATZIRIVITANI SANKATZI, IKANTZI ARI NAAHERI NAAKA.", lt, new ProofreadingResult());
-/*  51: 42 */     for (int x = 0; x < error.aErrors.length; x++)
-/*  52:    */     {
-/*  53: 43 */       System.out.println(error.aErrors[x].nErrorStart + ", " + error.aErrors[x].nErrorLength + ", " + error.aErrors[x].nErrorType + ", " + error.aErrors[x].aRuleIdentifier + ", " + error.aErrors[x].aShortComment + ", " + error.aErrors[x].aFullComment);
-/*  54: 44 */       for (int j = 0; j < error.aErrors[x].aSuggestions.length; j++) {
-/*  55: 45 */         System.out.println("\t" + error.aErrors[x].aSuggestions[j]);
-/*  56:    */       }
-/*  57:    */     }
-/*  58:    */   }
-/*  59:    */   
+                  ProofreadingResult error = temp.proofreadText("PONYAA IKANTAVITAKA PASHINI, IROHATSI YATZIRIVITANI SANKATZI, IKANTZI ARI NAAHERI NAAKA.", lt, new ProofreadingResult());
+                  for (int x = 0; x < error.aErrors.length; x++)
+                  {
+                    System.out.println(error.aErrors[x].nErrorStart + ", " + error.aErrors[x].nErrorLength + ", " + error.aErrors[x].nErrorType + ", " + error.aErrors[x].aRuleIdentifier + ", " + error.aErrors[x].aShortComment + ", " + error.aErrors[x].aFullComment);
+                    for (int j = 0; j < error.aErrors[x].aSuggestions.length; j++) {
+                      System.out.println("\t" + error.aErrors[x].aSuggestions[j]);
+                    }
+                  }
+                }
+                
                 public Client()
                 {
                   System.err.println("os.name\t" + System.getProperty("os.name"));
