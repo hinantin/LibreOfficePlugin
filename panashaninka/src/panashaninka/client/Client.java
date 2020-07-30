@@ -37,26 +37,26 @@ import java.io.InputStreamReader;
                 protected String[] command = null; 
                 protected File foma_file = null;
                 
-/*  25: 18 */   protected Pattern rx = Pattern.compile("(\\S+)");
-/*  26: 19 */   protected Matcher rx_m = this.rx.matcher("");
-/*  27: 20 */   protected Pattern rx_pb = Pattern.compile("^\\p{Punct}+(\\S+?)$");
-/*  28: 21 */   protected Matcher rx_pb_m = this.rx_pb.matcher("");
-/*  29: 22 */   protected Pattern rx_pe = Pattern.compile("^(\\S+?)\\p{Punct}+$");
-/*  30: 23 */   protected Matcher rx_pe_m = this.rx_pe.matcher("");
-/*  31: 24 */   protected Pattern rx_pbe = Pattern.compile("^\\p{Punct}+(\\S+?)\\p{Punct}+$");
-/*  32: 25 */   protected Matcher rx_pbe_m = this.rx_pbe.matcher("");
-/*  33: 26 */   protected int position = 0;
-/*  34: 27 */   protected boolean debug = false;
-/*  35:    */   
-/*  36:    */   public static void main(String[] args)
-/*  37:    */     throws Exception
-/*  38:    */   {
-/*  39: 30 */     System.out.println("Initializing client");
-/*  40:    */     
-/*  41: 32 */     Client temp = new Client();
-/*  42: 33 */     temp.debug = true;
-/*  43: 34 */     Locale lt = new Locale();
-/*  44: 35 */     //lt.Language = "qu";
+                protected Pattern rx = Pattern.compile("(\\S+)");
+                protected Matcher rx_m = this.rx.matcher("");
+                protected Pattern rx_pb = Pattern.compile("^\\p{Punct}+(\\S+?)$");
+                protected Matcher rx_pb_m = this.rx_pb.matcher("");
+                protected Pattern rx_pe = Pattern.compile("^(\\S+?)\\p{Punct}+$");
+                protected Matcher rx_pe_m = this.rx_pe.matcher("");
+                protected Pattern rx_pbe = Pattern.compile("^\\p{Punct}+(\\S+?)\\p{Punct}+$");
+                protected Matcher rx_pbe_m = this.rx_pbe.matcher("");
+                protected int position = 0;
+                protected boolean debug = false;
+                
+                public static void main(String[] args)
+                  throws Exception
+                {
+                  System.out.println("Initializing client");
+                  
+                  Client temp = new Client();
+                  temp.debug = true;
+                  Locale lt = new Locale();
+                  //lt.Language = "qu";
                   //lt.Country = "PE";
                   // SPELL CHECKING CONFIGURATION 
                   lt.Language = "qul";
