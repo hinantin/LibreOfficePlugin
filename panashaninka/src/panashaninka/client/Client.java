@@ -136,17 +136,17 @@ package panashaninka.client;
                   }
                 }
                 
-/* 102:    */   public synchronized ProofreadingResult proofreadText(String paraText, Locale locale, ProofreadingResult paRes)
-/* 103:    */   {
-/* 104:    */     try
-/* 105:    */     {
-/* 106:100 */       paRes.nStartOfSentencePosition = this.position;
-/* 107:101 */       paRes.nStartOfNextSentencePosition = (this.position + paraText.length());
-/* 108:102 */       paRes.nBehindEndOfSentencePosition = paRes.nStartOfNextSentencePosition;
-/* 109:    */       
-/* 110:104 */       ArrayList<SingleProofreadingError> errors = new ArrayList();
-/* 111:    */       
-/* 112:106 */       this.rx_m.reset(paraText);
+                public synchronized ProofreadingResult proofreadText(String paraText, Locale locale, ProofreadingResult paRes)
+                {
+                  try
+                  {
+                    paRes.nStartOfSentencePosition = this.position;
+                    paRes.nStartOfNextSentencePosition = (this.position + paraText.length());
+                    paRes.nBehindEndOfSentencePosition = paRes.nStartOfNextSentencePosition;
+                    
+                    ArrayList<SingleProofreadingError> errors = new ArrayList();
+                    
+                    this.rx_m.reset(paraText);
 /* 113:107 */       while (this.rx_m.find())
 /* 114:    */       {
 /* 115:108 */         SingleProofreadingError err = processWord(this.rx_m.group(), this.rx_m.start());
