@@ -1,30 +1,30 @@
 package panashaninka.client;
 
-/*   2:    */ 
-/*   3:    */ import com.sun.star.lang.Locale;
-/*   4:    */ import com.sun.star.linguistic2.ProofreadingResult;
-/*   5:    */ import com.sun.star.linguistic2.SingleProofreadingError;
-import java.io.BufferedReader;
-/*   6:    */ import java.io.File;
-/*   7:    */ import java.io.InputStream;
-import java.io.InputStreamReader;
-/*   8:    */ import java.io.OutputStream;
-/*   9:    */ import java.io.PrintStream;
-/*  10:    */ import java.net.URL;
-/*  11:    */ import java.nio.charset.Charset;
-/*  12:    */ import java.security.MessageDigest;
-/*  13:    */ import java.util.ArrayList;
-/*  14:    */ import java.util.Formatter;
-/*  15:    */ import java.util.Map;
-/*  16:    */ import java.util.regex.Matcher;
-/*  17:    */ import java.util.regex.Pattern;
-/*  18:    */ import panashaninka.openoffice.Main;
-/*  19:    */ 
-/*  20:    */ public class Client
-/*  21:    */ {
-/*  22: 15 */   protected Process flookup = null;
-/*  23: 16 */   protected OutputStream fl_wr = null;
-/*  24: 17 */   protected InputStream fl_rd = null;
+              
+              import com.sun.star.lang.Locale;
+              import com.sun.star.linguistic2.ProofreadingResult;
+              import com.sun.star.linguistic2.SingleProofreadingError;
+              import java.io.BufferedReader;
+              import java.io.File;
+              import java.io.InputStream;
+              import java.io.InputStreamReader;
+              import java.io.OutputStream;
+              import java.io.PrintStream;
+              import java.net.URL;
+              import java.nio.charset.Charset;
+              import java.security.MessageDigest;
+              import java.util.ArrayList;
+              import java.util.Formatter;
+              import java.util.Map;
+              import java.util.regex.Matcher;
+              import java.util.regex.Pattern;
+              import panashaninka.openoffice.Main;
+              
+              public class Client
+              {
+                protected Process flookup = null;
+                protected OutputStream fl_wr = null;
+                protected InputStream fl_rd = null;
 
                 /* TO OBTAIN THE SUGGESTIONS */
                 /*
