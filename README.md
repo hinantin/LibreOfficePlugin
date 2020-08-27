@@ -1,7 +1,7 @@
 Spellchecker plugins for LibreOffice
 ============================
 
-**Version**: 0.3-beta.3
+**Version**: 0.4-beta.1
 
 **Last updated**: 2020/08/26
 
