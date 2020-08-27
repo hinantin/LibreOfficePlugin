@@ -3,7 +3,7 @@ Spellchecker plugins for LibreOffice
 
 **Version**: 0.3-beta.3
 
-**Last updated**: 2020/07/28
+**Last updated**: 2020/08/26
 
 #### Authors: 
   * Annette Rios, e-mail: rios at cl.uzh.ch 
